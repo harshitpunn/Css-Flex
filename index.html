@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Design App</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+        <link href="css/main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="flex-container">
+                <div class="child1 images">
+                    <div class="heading">
+                        <h2>Styles</h2>
+                    </div>
+                    <div class="image">
+                        <img id="carimage" src="assets/blue.jpg" />
+                    </div>
+                </div>
+                <div class="child1 details">
+                    <div class="heading">
+                        <h2>Ratings</h2>                       
+                    </div>   
+                    <div class="flex-container">
+                        <div class="ratings">
+                            <div class="progress">
+                                <div class="holder">
+                                <span class="rating-title">Critic Rating</span>
+                                <div class="progressstyle progress-moved">
+                                    <div class="progress-bar  progress-bar2" >
+                                    </div>                       
+                                </div>
+                                <span class="rating-number">&nbsp; 87</span>
+                                </div>  
+                            </div>
+                            <div class="progress">
+                                    <div class="holder">
+                                    <span class="rating-title">Performance</span>
+                                    <div class="progressstyle progress-moved">
+                                        <div class="progress-bar  progress-bar3" >
+                                        </div>                       
+                                    </div>
+                                    <span class="rating-number">&nbsp; 64</span>
+                                    </div>  
+                                </div>
+                            <div class="progress">
+                                    <div class="holder">
+                                    <span class="rating-title">Interior</span>
+                                    <div class="progressstyle progress-moved">
+                                        <div class="progress-bar  progress-bar4" >
+                                        </div>                       
+                                    </div>
+                                    <span class="rating-number">&nbsp; 90</span>
+                                    </div>  
+                                </div>
+                            <div class="progress">
+                                    <div class="holder">
+                                    <span class="rating-title">Rating</span>
+                                    <div class="progressstyle progress-moved">
+                                        <div class="progress-bar  progress-bar5" >
+                                        </div>                       
+                                    </div>
+                                    <span class="rating-number">&nbsp; 44</span>
+                                    </div>  
+                                </div>                                   
+
+                            <div class="progress">
+                                <div class="holder">
+                                <span class="rating-title">Critic Rating</span>
+                                <div class="progressstyle progress-moved">
+                                    <div class="progress-bar  progress-bar6" >
+                                    </div>                       
+                                </div>
+                                <span class="rating-number">&nbsp; 52</span>
+                                </div>  
+                            </div>
+                            <div class="progress">
+                                <div class="holder">
+                                    <div class="rating-link">
+                                        <a href="">View All Ratings >></a>
+                                    </div>                                            
+                                </div>
+                            </div>
+                        </div> 
+                        <div  class="meter">
+                            <div class="speedometer">
+                                <div class="half-circle">
+                                    <img src="assets/icon-meter.png" class="meter-needle" />
+                                </div>
+                                <div class="circle-rating">9</div>
+                                <div class="totalrating">Overall Rating</div>                                        
+                            </div>
+                        </div>                                                           
+                </div>                          
+                </div>
+                <div class="shifter ">
+                    <div class="flexshow" style="padding: 20px 0px 10px;">
+                        <div class="inline">
+                            <div class="outer">
+                                <div class="color-circle active" id="blue-color" onclick="changedata.change('blue', 'blue-color', 'Blue')">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                                        <polyline class="path check" fill="none" stroke="#ffffff" stroke-width="10"   points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+                                        </svg>                                        
+                                </div>
+                            </div>
+                            <div class="outer">
+                                <div class="color-circle" id="grey-color" onclick="changedata.change('grey','grey-color', 'Grey')">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                                        <polyline class="path check" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+                                    </svg>                                       
+                                </div>  
+                            </div>
+                            <div class="outer">
+                                <div class="color-circle" id="red-color" onclick="changedata.change('red', 'red-color', 'Red')">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                                        <polyline class="path check" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+                                    </svg>              
+                                </div>                            
+                            </div>
+                            <div class="outer">
+                                <div class="color-circle" id="silver-color" onclick="changedata.change('silver','silver-color', 'Silver')">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                                        <polyline class="path" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+                                    </svg>                                             
+                                </div>                             
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="flexshow colorname">
+                        <div id="text" class="inline subdata">
+                            Blue
+                        </div>                            
+                    </div>   
+                    <div class="flexshow">
+                            <div  class="inline subdata">
+                                    This is test data and we are adding some stuff here
+                            </div>                            
+                    </div>                                                  
+
+                </div>
+                <div class="child details car-box">
+                    <div class="card">
+                        <img src="https://cdn.static-carhp.com/tr:w-130,h-90,ow-19.62962962963,oi-car-hp-image-server@images@carhp_logo_white.png,ox-10,oy-10/images/car/Jeep/new_Jeep_Cherokee_2017_SUV_5b6c34c668920.jpg">
+                        <div class="car-name">
+                            Swift
+                        </div>
+                        <div class="car-rating">
+                            8.7
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://cdn.static-carhp.com/tr:w-130,h-90,ow-19.62962962963,oi-car-hp-image-server@images@carhp_logo_white.png,ox-10,oy-10/images/car/Jeep/new_Jeep_Cherokee_2017_SUV_5b6c34c668920.jpg">
+                        <div class="car-name">
+                                Swift
+                        </div>
+                        <div class="car-rating">
+                                8.7
+                            </div>                               
+                    </div>
+
+                    <div class="card">
+                        <img src="https://cdn.static-carhp.com/tr:w-130,h-90,ow-19.62962962963,oi-car-hp-image-server@images@carhp_logo_white.png,ox-10,oy-10/images/car/Jeep/new_Jeep_Cherokee_2017_SUV_5b6c34c668920.jpg">
+                        <div class="car-name">
+                                Swift
+                        </div>
+                        <div class="car-rating">
+                                8.7
+                        </div>                            
+                    </div>                            
+
+                    <div class="card">
+                        <img src="https://cdn.static-carhp.com/tr:w-130,h-90,ow-19.62962962963,oi-car-hp-image-server@images@carhp_logo_white.png,ox-10,oy-10/images/car/Jeep/new_Jeep_Cherokee_2017_SUV_5b6c34c668920.jpg">
+                        <div class="car-name">
+                                Swift
+                        </div>
+                        <div class="car-rating">
+                                8.7
+                        </div>                            
+                    </div> 
+                        
+                    <div class="card">
+                        <img src="https://cdn.static-carhp.com/tr:w-130,h-90,ow-19.62962962963,oi-car-hp-image-server@images@carhp_logo_white.png,ox-10,oy-10/images/car/Jeep/new_Jeep_Cherokee_2017_SUV_5b6c34c668920.jpg">
+                        <div class="car-name">
+                                Swift
+                        </div>
+                        <div class="car-rating">
+                                8.7
+                        </div>                            
+                    </div>                                                         
+                </div>
+            </div>
+        </div>
+        <script src="custom.js"></script>
+    </body>
+</html>

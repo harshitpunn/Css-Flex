@@ -1,0 +1,492 @@
+@-webkit-keyframes spinning {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
+  }
+}
+
+@keyframes spinning {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
+  }
+}
+
+@-webkit-keyframes progressAnimation {
+  0% {
+    width: 5%;
+    background-color: #fedd02;
+  }
+  100% {
+    width: 87%;
+    background-color: #fedd02;
+  }
+}
+
+@keyframes progressAnimation {
+  0% {
+    width: 5%;
+    background-color: #fedd02;
+  }
+  100% {
+    width: 87%;
+    background-color: #fedd02;
+  }
+}
+
+@-webkit-keyframes progressAnimation3 {
+  0% {
+    width: 0%;
+    background-color: #fedd02;
+  }
+  100% {
+    width: 64%;
+    background-color: #fedd02;
+  }
+}
+
+@keyframes progressAnimation3 {
+  0% {
+    width: 0%;
+    background-color: #fedd02;
+  }
+  100% {
+    width: 64%;
+    background-color: #fedd02;
+  }
+}
+
+@-webkit-keyframes progressAnimation4 {
+  0% {
+    width: 0%;
+    background-color: #fedd02;
+  }
+  100% {
+    width: 90%;
+    background-color: #fedd02;
+  }
+}
+
+@keyframes progressAnimation4 {
+  0% {
+    width: 0%;
+    background-color: #fedd02;
+  }
+  100% {
+    width: 90%;
+    background-color: #fedd02;
+  }
+}
+
+@-webkit-keyframes progressAnimation5 {
+  0% {
+    width: 0%;
+    background-color: #fedd02;
+  }
+  100% {
+    width: 44%;
+    background-color: #fedd02;
+  }
+}
+
+@keyframes progressAnimation5 {
+  0% {
+    width: 0%;
+    background-color: #fedd02;
+  }
+  100% {
+    width: 44%;
+    background-color: #fedd02;
+  }
+}
+
+@-webkit-keyframes progressAnimation6 {
+  0% {
+    width: 0%;
+    background-color: #fedd02;
+  }
+  100% {
+    width: 52%;
+    background-color: #fedd02;
+  }
+}
+
+@keyframes progressAnimation6 {
+  0% {
+    width: 0%;
+    background-color: #fedd02;
+  }
+  100% {
+    width: 52%;
+    background-color: #fedd02;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body .container {
+  width: 96%;
+  margin: auto;
+}
+
+body .container .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  body .container .flex-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+  body .container .flex-container .child1 {
+    width: 50%;
+  }
+  body .container .flex-container .child1 .ratings {
+    width: 60%;
+  }
+  body .container .flex-container .child1 .meter {
+    width: 40%;
+  }
+  body .container .flex-container .child, body .container .flex-container .shifter {
+    width: 50%;
+  }
+}
+
+body .container .flex-container .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+body .container .flex-container .meter .speedometer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+body .container .flex-container .meter .speedometer .half-circle {
+  width: 190px;
+  height: 95px;
+  /* as the half of the width */
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border: 10px solid #fedd02;
+  border-bottom: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body .container .flex-container .meter .speedometer .half-circle .meter-needle {
+  position: absolute;
+  bottom: -12px;
+  -webkit-transform-origin: 86% 50%;
+          transform-origin: 86% 50%;
+  -webkit-animation: spinning 6s linear;
+          animation: spinning 6s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+body .container .flex-container .meter .speedometer .circle-rating {
+  padding-top: 5px;
+  color: #222;
+  font-size: 40px;
+  text-align: center;
+}
+
+body .container .flex-container .meter .speedometer .totalrating {
+  padding-top: 10px;
+  color: #9e9e9e;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+body .container .flex-container .ratings .progress {
+  padding: 0px 10px 15px 0px;
+}
+
+body .container .flex-container .ratings .progress .holder {
+  position: relative;
+}
+
+body .container .flex-container .ratings .progress .rating-title {
+  color: #222;
+  font-size: 12px;
+  margin: 3px 0;
+  font-weight: 600;
+}
+
+body .container .flex-container .ratings .progress .progressstyle {
+  border-radius: 30px;
+  width: 92%;
+  background-color: #fff3a4;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+body .container .flex-container .ratings .progress .progressstyle .progress-bar {
+  height: 12px;
+  border-radius: 30px;
+  background-color: #fedd02;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-property: width, background-color;
+  transition-property: width, background-color;
+}
+
+body .container .flex-container .ratings .progress .progressstyle .progress-bar2 {
+  width: 87%;
+  -webkit-animation: progressAnimation 6s;
+          animation: progressAnimation 6s;
+}
+
+body .container .flex-container .ratings .progress .progressstyle .progress-bar3 {
+  width: 64%;
+  -webkit-animation: progressAnimation3 6s;
+          animation: progressAnimation3 6s;
+}
+
+body .container .flex-container .ratings .progress .progressstyle .progress-bar4 {
+  width: 90%;
+  -webkit-animation: progressAnimation4 6s;
+          animation: progressAnimation4 6s;
+}
+
+body .container .flex-container .ratings .progress .progressstyle .progress-bar5 {
+  width: 44%;
+  -webkit-animation: progressAnimation5 6s;
+          animation: progressAnimation5 6s;
+}
+
+body .container .flex-container .ratings .progress .progressstyle .progress-bar6 {
+  width: 52%;
+  -webkit-animation: progressAnimation6 6s;
+          animation: progressAnimation6 6s;
+}
+
+body .container .flex-container .ratings .progress .rating-number {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #222;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+body .container .flex-container .ratings .progress .rating-link {
+  text-align: right;
+}
+
+body .container .flex-container .ratings .progress .rating-link a {
+  color: #13a2e4;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+body .container .flex-container .shifter .flexshow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .flex-container .shifter .flexshow .inline {
+  display: inline-block;
+}
+
+body .container .flex-container .shifter .flexshow .inline .outer {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  margin: 0 3px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+body .container .flex-container .shifter .flexshow .inline .outer .color-circle {
+  height: 24px;
+  width: 24px;
+  margin: 3px;
+  border-radius: 50%;
+}
+
+body .container .flex-container .shifter .flexshow .inline .outer .color-circle .path {
+  display: none;
+}
+
+body .container .flex-container .shifter .flexshow .inline .outer .active .path {
+  display: block !important;
+}
+
+body .container .flex-container .shifter .flexshow .inline .outer #blue-color {
+  background: blue;
+}
+
+body .container .flex-container .shifter .flexshow .inline .outer #red-color {
+  background: red;
+}
+
+body .container .flex-container .shifter .flexshow .inline .outer #grey-color {
+  background: grey;
+}
+
+body .container .flex-container .shifter .flexshow .inline .outer #silver-color {
+  background: silver;
+}
+
+body .container .flex-container .shifter .colorname {
+  margin-top: 10px;
+}
+
+body .container .flex-container .shifter .subdata {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #9e9e9e;
+  text-align: center;
+}
+
+body .container .flex-container .car-box {
+  padding-top: 20px;
+}
+
+body .container .flex-container .car-box .card {
+  width: calc(20% - 1% - 2px);
+  margin-right: 1%;
+  overflow: hidden;
+  display: block;
+  border: solid 1px #eee;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+body .container .flex-container .car-box .car-name {
+  color: #222;
+  font-size: 11px;
+  font-weight: 600;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+body .container .flex-container .car-box .car-rating {
+  font-size: 20px;
+  height: 30px;
+  bottom: 0;
+  text-align: center;
+  background-color: #13a2e4;
+  color: #fff;
+}
+
+body .container .flex-container .heading {
+  width: 100%;
+}
+
+body .container .flex-container .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  body .container .flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .container .flex-container .child1 {
+    width: 100%;
+  }
+  body .container .flex-container .child1 .meter, body .container .flex-container .child1 .ratings {
+    width: 100%;
+  }
+  body .container .flex-container .image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  body .container .flex-container .shifter {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 100%;
+    padding-top: 10px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
